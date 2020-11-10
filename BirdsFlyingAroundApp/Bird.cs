@@ -2,8 +2,13 @@
 {
     public abstract class Bird
     {
-        public abstract void SetLocation(double longitude, double latitude);
-        public abstract void SetAltitude(double altitude);
-        public abstract void Draw();
+        // These methods doesn't give any sense. Due to the bird not knowing its location as its gets born.
+        //public abstract void SetLocation(double longitude, double latitude);
+        //public abstract void SetAltitude(double altitude);
+
+        public abstract string MakeSound();
+
+        public abstract string Eat();
+
     }
 }

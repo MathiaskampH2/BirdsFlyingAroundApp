@@ -1,25 +1,25 @@
 ﻿namespace BirdsFlyingAroundApp
 {
-    public class Albatross:Bird, ICanFly
+    /// <summary>
+    /// Albatross class is a subclass of Bird class
+    /// Inherits from both Bird and ICanFly
+    /// Overrides Bird's methods
+    /// </summary>
+    public class Albatross : Bird, ICanFly
     {
-        public override void SetLocation(double longitude, double latitude)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override void SetAltitude(double altitude)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override void Draw()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public string BirdCanFly()
         {
-            return "I'm an albatross and i can fly";
+            return "I can fly";
+        }
+
+        public override string MakeSound()
+        {
+            return "I make a whining, squeaking, grunting, and moaning sound";
+        }
+
+        public override string Eat()
+        {
+            return "I eat fish";
         }
     }
 }

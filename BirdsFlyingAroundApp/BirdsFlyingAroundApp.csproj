@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Albatross.cs" />
     <Compile Include="Bird.cs" />
+    <Compile Include="DrawBird.cs" />
     <Compile Include="ICanFly.cs" />
     <Compile Include="Penguin.cs" />
     <Compile Include="Program.cs" />

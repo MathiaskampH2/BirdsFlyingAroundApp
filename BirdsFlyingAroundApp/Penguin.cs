@@ -2,23 +2,21 @@
 
 namespace BirdsFlyingAroundApp
 {
+
+    /// <summary>
+    /// Penguin class inherits from Bird
+    /// overrides Bird's methods to math it's own
+    /// </summary>
     public class Penguin : Bird
     {
-        public override void SetLocation(double longitude, double latitude)
+        public override string MakeSound()
         {
-            //sæt en lokation
+            return "I make a growl sound";
         }
 
-        public override void SetAltitude(double altitude)
+        public override string Eat()
         {
-            //Denne metode vil aldrig blive implementeret for en pingvin
-            throw new NotImplementedException();
+            return "I eat fish";
         }
-
-        public override void Draw()
-        {
-            //Denne metode tegner én pingvin
-        }
-
     }
 }
